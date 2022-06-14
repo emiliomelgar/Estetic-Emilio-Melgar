@@ -13,3 +13,15 @@ body{
     "footer footer footer";
     background-color: $bg-body;
 }
+@media screen and (max-width: 768px) {
+        body{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+            grid-template-areas: 
+            "head"
+            "descr"
+            "tarif"
+            "footer";
+        }
+}
