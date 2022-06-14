@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 0.5fr);
+  grid-template-areas: "head head head" "descr descr tarif" "footer footer footer";
+  background-color: #faeee7;
+}
+
+header {
+  grid-area: head;
+}
+header .navbar {
+  background-color: #faeee7;
+  color: black;
+}
+header .navbar .btn {
+  color: black;
+}
+header .navbar .btn:hover {
+  background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
+  background-color: #ff8ba7;
+}
+header .navbar .nav-link {
+  color: black;
+}
+header .navbar .nav-linkhover {
+  color: black;
+}
+header .navbar .navbar-nav {
+  padding-left: 300px;
+  color: black;
+}
+header .navbar .nav-item {
+  color: #ff8ba7;
+  border-color: #ff8ba7;
+  margin: 5px;
+}
+
+main {
+  grid-area: descr;
+}
+main .descript {
+  padding: 20px;
+  margin: 20px;
+  border: 1.5px solid;
+  border-color: #ff8ba7;
+  background-color: rgba(238, 228, 221, 0.7607843137);
+}
+
+.tarifa {
+  grid-area: tarif;
+}
+.tarifa .costos {
+  display: flex;
+  padding-top: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+.tarifa .costos h3 {
+  margin-right: 200px;
+  font-family: cursive;
+}
+.tarifa .costos ul {
+  list-style-type: none;
+}
+.tarifa .costos ul li {
+  padding-top: 10px;
+  margin-left: 40px;
+}
+.tarifa .costos .turn {
+  margin-top: 20px;
+  margin-right: 60px;
+}
+.tarifa .costos .btn {
+  color: black;
+}
+.tarifa .costos .btn:hover {
+  background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
+  background-color: #ff8ba7;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #ff8ba7;
+}
+footer .pie {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+footer .pie a {
+  margin: 15px;
+}
+footer .pie p {
+  margin: 130px;
+}
+footer .pie .btn {
+  background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
+  border-color: black;
+}
+footer .pie i {
+  color: black;
+}
+footer .pie i:hover {
+  transform: scale(2, 2);
+  transition: all 2s;
+}
+
+main section li {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+main .carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
+  background-color: #ff8ba7;
+}
+
+/*# sourceMappingURL=style.css.map */

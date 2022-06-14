@@ -1,0 +1,31 @@
+.tarifa{
+    grid-area: tarif;
+    .costos{
+        display: flex;
+        padding-top: 80px;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            margin-right: 200px;
+            font-family: cursive;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                padding-top: 10px;
+                margin-left: 40px;
+            }
+        }
+        .turn{
+            margin-top: 20px;
+            margin-right: 60px;
+        }
+        .btn{
+            color: $colnegr;
+                    &:hover{
+                        background-image: linear-gradient(to top, $bg-footer, $grad);
+                        background-color: $bg-footer;
+                    }
+        }
+    }
+}

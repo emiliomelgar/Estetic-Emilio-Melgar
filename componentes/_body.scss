@@ -1,0 +1,15 @@
+@import "../base/colores";
+*{
+    padding: 0;
+    border: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,0.5fr);
+    grid-template-areas: 
+    "head head head"
+    "descr descr tarif"
+    "footer footer footer";
+    background-color: $bg-body;
+}

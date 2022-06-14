@@ -1,0 +1,32 @@
+@import "../base/colores";
+
+header{
+    grid-area: head;
+        .navbar{
+            background-color: $bg-body;
+            color: $colnegr;
+            .btn{
+                color: $colnegr;
+                &:hover{
+                    background-image: linear-gradient(to top, $bg-footer, $grad);
+                    background-color: $bg-footer;
+                }
+            }
+            .nav-link{
+                color: $colnegr;
+                &hover{
+                    color: $colnegr;
+                }
+            }
+            .navbar-nav{
+                padding-left: 300px;
+                color: $colnegr
+            }
+            .nav-item{
+                color: $bg-footer;
+                border-color: $bg-footer;
+                margin: 5px;
+            }
+        }
+
+    }
