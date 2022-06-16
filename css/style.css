@@ -131,7 +131,17 @@ main .carousel-item.active {
   justify-content: center;
 }
 
-.btn:hover {
+main .templ li {
+  display: flex;
+  list-style-type: none;
+  padding: inferit;
+}
+main .btn {
+  margin-left: 100px;
+  color: black;
+  border-color: #ff8ba7;
+}
+main .btn:hover {
   background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
   background-color: #ff8ba7;
 }
