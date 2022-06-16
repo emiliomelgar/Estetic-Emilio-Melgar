@@ -1,16 +1,19 @@
+@import "../base/colores";
+@import "../base/maps";
+
 .tarifa{
     grid-area: tarif;
     .costos{
-        display: flex;
+        @extend %display;
         padding-top: 80px;
         flex-direction: column;
-        align-items: center;
+        
         h3{
             margin-right: 200px;
             font-family: cursive;
         }
         ul{
-            list-style-type: none;
+            list-style-type: map-get($estilo , list);
             li{
                 padding-top: 10px;
                 margin-left: 40px;
@@ -22,6 +25,8 @@
         }
         .btn{
             color: $colnegr;
+            border-color: map-get($estilo , bcol);
+            font-family: map-get($estilo , fbar);
                     &:hover{
                         background-image: linear-gradient(to top, $bg-footer, $grad);
                         background-color: $bg-footer;

@@ -1,9 +1,11 @@
 @import "../base/colores";
+@import "../base/maps";
+@import "../base/extends";
 
 main{
 .templ{
     li{
-        display: flex;
+        @extend %display;
         list-style-type: none;
         padding: inferit;
         

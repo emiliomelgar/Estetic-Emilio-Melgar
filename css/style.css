@@ -1,3 +1,10 @@
+main .templ li, main .carousel-item.active, main section li, footer .pie, .tarifa .costos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 * {
   padding: 0;
   border: 0;
@@ -25,49 +32,45 @@ header {
 header .navbar {
   background-color: #faeee7;
   color: black;
-}
-header .navbar .btn {
-  color: black;
-}
-header .navbar .btn:hover {
-  background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
-  background-color: #ff8ba7;
-}
-header .navbar .nav-link {
-  color: black;
-}
-header .navbar .nav-linkhover {
-  color: black;
+  font-family: "Pacifico";
 }
 header .navbar .navbar-nav {
   padding-left: 300px;
-  color: black;
 }
-header .navbar .nav-item {
-  color: #ff8ba7;
+header .navbar .navbar-nav .nav-item {
   border-color: #ff8ba7;
   margin: 5px;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+header .btn {
+  color: black;
+}
+header .btn:hover {
+  background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
+  background-color: #ff8ba7;
 }
 
 main {
   grid-area: descr;
 }
 main .descript {
+  font-size: 20px;
+  font-family: "Josefin Slab";
+  border-color: #ff8ba7;
+  background-color: rgba(238, 228, 221, 0.7607843137);
   padding: 20px;
   margin: 20px;
   border: 1.5px solid;
-  border-color: #ff8ba7;
-  background-color: rgba(238, 228, 221, 0.7607843137);
 }
 
 .tarifa {
   grid-area: tarif;
 }
 .tarifa .costos {
-  display: flex;
   padding-top: 80px;
   flex-direction: column;
-  align-items: center;
 }
 .tarifa .costos h3 {
   margin-right: 200px;
@@ -86,10 +89,19 @@ main .descript {
 }
 .tarifa .costos .btn {
   color: black;
+  border-color: #ff8ba7;
+  font-family: "Pacifico";
 }
 .tarifa .costos .btn:hover {
   background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
   background-color: #ff8ba7;
+}
+
+main .templ li, main .carousel-item.active, main section li, footer .pie, .tarifa .costos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 footer {
@@ -97,9 +109,7 @@ footer {
   background-color: #ff8ba7;
 }
 footer .pie {
-  display: flex;
   flex-wrap: nowrap;
-  align-items: center;
 }
 footer .pie a {
   margin: 15px;
@@ -108,6 +118,7 @@ footer .pie p {
   margin: 130px;
 }
 footer .pie .btn {
+  font-family: "Courier New";
   background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
   border-color: black;
 }
@@ -120,19 +131,18 @@ footer .pie i:hover {
 }
 
 main section li {
-  display: flex;
   list-style-type: none;
-  justify-content: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-main .carousel-item.active {
+main .templ li, .tarifa .costos, footer .pie, main section li, main .carousel-item.active {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 main .templ li {
-  display: flex;
   list-style-type: none;
   padding: inferit;
 }

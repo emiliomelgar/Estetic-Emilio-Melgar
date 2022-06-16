@@ -1,0 +1,12 @@
+@import "../base/colores";
+
+
+@mixin colNav ($bg-body, $colnegr){
+    background-color: $bg-body;
+    color: $colnegr;
+}
+
+@mixin descr ($bg-footer, $bg-descr){
+    border-color: $bg-footer;
+    background-color: $bg-descr;
+}

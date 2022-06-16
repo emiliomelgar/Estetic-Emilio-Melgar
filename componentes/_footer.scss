@@ -1,12 +1,13 @@
 @import "../base/colores";
+@import "../base/maps";
+@import "../base/extends";
 
 footer{
     grid-area: footer;
     background-color: $bg-footer;
     .pie{
-        display:flex;
+        @extend %display;
         flex-wrap: nowrap;
-        align-items: center;
         a{
             margin: 15px;
         }
@@ -14,6 +15,7 @@ footer{
             margin: 130px;
         }
         .btn{
+            font-family: map-get($estilo , fbot);
             background-image: linear-gradient(to top, $bg-footer, $grad);
             border-color: black;
         }

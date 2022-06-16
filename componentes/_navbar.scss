@@ -1,10 +1,23 @@
 @import "../base/colores";
+@import "../base/maps";
+@import "../base/mixin";
 
 header{
     grid-area: head;
         .navbar{
-            background-color: $bg-body;
-            color: $colnegr;
+            @include colNav($bg-body, $colnegr);
+            font-family: map-get($estilo , fbar);
+                .navbar-nav{
+                    padding-left: 300px;                            
+                    .nav-item{                                      
+                        border-color: $bg-footer;
+                        margin: 5px;
+                            .nav-link {
+                                color: $colnegr;
+                     }
+                }
+            }
+        }       
             .btn{
                 color: $colnegr;
                 &:hover{
@@ -12,21 +25,4 @@ header{
                     background-color: $bg-footer;
                 }
             }
-            .nav-link{
-                color: $colnegr;
-                &hover{
-                    color: $colnegr;
-                }
-            }
-            .navbar-nav{
-                padding-left: 300px;
-                color: $colnegr
-            }
-            .nav-item{
-                color: $bg-footer;
-                border-color: $bg-footer;
-                margin: 5px;
-            }
-        }
-
-    }
+}
