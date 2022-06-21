@@ -5,8 +5,8 @@
 }
 body{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,0.5fr);
+    grid-template-columns: repeat(3,0.5fr);
+    grid-template-rows: repeat(3,0.1fr);
     grid-template-areas: 
     "head head head"
     "descr descr tarif"
@@ -16,8 +16,8 @@ body{
 @media screen and (max-width: 768px) {
         body{
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+            grid-template-columns: 0.5fr;
+            grid-template-rows: 0.1fr;
             grid-template-areas: 
             "head"
             "descr"
