@@ -1,29 +1,26 @@
 @import "../base/colores";
 @import "../base/maps";
 
-.tarifa{
+.servicios{
     grid-area: tarif;
-    .costos{
+    .turn{
+        margin-top: 20px;
+        margin-right: 60px;
+    }
+    .list{
         @extend %display;
-        padding-top: 80px;
+        padding-top: 25px;
         flex-direction: column;
-        
+        ul{
+            list-style-type: none;
+        }
         h3{
             margin-right: 200px;
             font-family: cursive;
         }
-        ul{
-            list-style-type: map-get($estilo , list);
-            li{
-                padding-top: 10px;
-                margin-left: 40px;
-            }
-        }
-        .turn{
-            margin-top: 20px;
-            margin-right: 60px;
-        }
+        
         .btn{
+            margin-right: 10px;
             color: $colnegr;
             border-color: map-get($estilo , bcol);
             font-family: map-get($estilo , fbar);

@@ -1,4 +1,4 @@
-main .templ li, main .carousel-item.active, main section li, footer .pie, .tarifa .costos {
+main .templ li, main .carousel-item.active, main section li, footer .pie, .servicios .list {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -54,6 +54,7 @@ header .btn:hover {
 
 main {
   grid-area: descr;
+  padding-top: 50px;
 }
 main .descript {
   font-size: 20px;
@@ -65,39 +66,36 @@ main .descript {
   border: 1.5px solid;
 }
 
-.tarifa {
+.servicios {
   grid-area: tarif;
 }
-.tarifa .costos {
-  padding-top: 80px;
-  flex-direction: column;
-}
-.tarifa .costos h3 {
-  margin-right: 200px;
-  font-family: cursive;
-}
-.tarifa .costos ul {
-  list-style-type: none;
-}
-.tarifa .costos ul li {
-  padding-top: 10px;
-  margin-left: 40px;
-}
-.tarifa .costos .turn {
+.servicios .turn {
   margin-top: 20px;
   margin-right: 60px;
 }
-.tarifa .costos .btn {
+.servicios .list {
+  padding-top: 25px;
+  flex-direction: column;
+}
+.servicios .list ul {
+  list-style-type: none;
+}
+.servicios .list h3 {
+  margin-right: 200px;
+  font-family: cursive;
+}
+.servicios .list .btn {
+  margin-right: 10px;
   color: black;
   border-color: #ff8ba7;
   font-family: "Pacifico";
 }
-.tarifa .costos .btn:hover {
+.servicios .list .btn:hover {
   background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
   background-color: #ff8ba7;
 }
 
-main .templ li, main .carousel-item.active, main section li, footer .pie, .tarifa .costos {
+main .templ li, main .carousel-item.active, main section li, footer .pie, .servicios .list {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -135,7 +133,7 @@ main section li {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-main .templ li, .tarifa .costos, footer .pie, main section li, main .carousel-item.active {
+main .templ li, .servicios .list, footer .pie, main section li, main .carousel-item.active {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;

@@ -2,6 +2,7 @@
 @import "../base/mixin";
 main{
     grid-area: descr;
+    padding-top: 70px;
 .descript{
     font-size: map-get($estilo , psize );
     font-family: map-get($estilo , pfon );
