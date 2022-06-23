@@ -1,0 +1,65 @@
+@import "../base/colores";
+@import "../base/extends";
+@import "../base/maps";
+
+main{
+    .btn{
+        margin-left: 0px;
+        &:hover{
+            color: $colnegr;
+        }
+    }
+    .facial{
+        h2{
+            font-weight: bold;
+            padding-left: 30px;
+        }
+        border-color: $bg-footer;
+        @extend %bordeser;
+        font-size: map-get($estilo , psize );
+        font-family: map-get($estilo , pfon );
+        ul{
+            margin-left: 170px;
+        }
+        }   
+    .cuerpo{
+        h2{
+            font-weight: bold;
+            padding-left: 150px;
+        }
+        border-color: $bg-footer;
+        @extend %bordeser;
+        font-size: map-get($estilo , psize );
+        font-family: map-get($estilo , pfon );
+    }
+    .unas{
+        h2{
+            font-weight: bold;
+            padding-left: 120px;
+        }
+        border-color: $bg-footer;
+        @extend %bordeser;
+        font-size: map-get($estilo , psize );
+        font-family: map-get($estilo , pfon );
+    }
+    .pest{
+        h2{
+            font-weight: bold;
+            padding-left: 130px;
+        }
+        border-color: $bg-footer;
+        @extend %bordeser;
+        font-size: map-get($estilo , psize );
+        font-family: map-get($estilo , pfon );
+    }
+    .depi{
+        h2{
+            font-weight: bold;
+            padding-left: 100px;
+        }
+        border-color: $bg-footer;
+        @extend %bordeser;
+        font-size: map-get($estilo , psize );
+        font-family: map-get($estilo , pfon );
+    }
+}

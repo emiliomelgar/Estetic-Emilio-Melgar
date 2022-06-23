@@ -5,6 +5,12 @@ main .templ li, main .carousel-item.active, main section li, footer .pie, .servi
   align-items: center;
 }
 
+main .depi, main .pest, main .unas, main .cuerpo, main .facial {
+  padding: 20px;
+  margin: 20px;
+  border: 1.5px solid;
+}
+
 * {
   padding: 0;
   border: 0;
@@ -13,7 +19,7 @@ main .templ li, main .carousel-item.active, main section li, footer .pie, .servi
 body {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: repeat(3, 0.1fr);
+  grid-template-rows: repeat(3, 0fr);
   grid-template-areas: "head head head" "descr descr tarif" "footer footer footer";
   background-color: #faeee7;
 }
@@ -54,7 +60,7 @@ header .btn:hover {
 
 main {
   grid-area: descr;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 main .descript {
   font-size: 20px;
@@ -102,6 +108,12 @@ main .templ li, main .carousel-item.active, main section li, footer .pie, .servi
   align-items: center;
 }
 
+main .depi, main .pest, main .unas, main .cuerpo, main .facial {
+  padding: 20px;
+  margin: 20px;
+  border: 1.5px solid;
+}
+
 footer {
   grid-area: footer;
   background-color: #ff8ba7;
@@ -140,6 +152,12 @@ main .templ li, .servicios .list, footer .pie, main section li, main .carousel-i
   align-items: center;
 }
 
+main .depi, main .pest, main .unas, main .cuerpo, main .facial {
+  padding: 20px;
+  margin: 20px;
+  border: 1.5px solid;
+}
+
 main .templ li {
   list-style-type: none;
   padding: inferit;
@@ -152,6 +170,74 @@ main .btn {
 main .btn:hover {
   background-image: linear-gradient(to top, #ff8ba7, rgb(110, 49, 104));
   background-color: #ff8ba7;
+}
+
+.servicios .list, footer .pie, main section li, main .carousel-item.active, main .templ li {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+main .depi, main .pest, main .unas, main .cuerpo, main .facial {
+  padding: 20px;
+  margin: 20px;
+  border: 1.5px solid;
+}
+
+main .btn {
+  margin-left: 0px;
+}
+main .btn:hover {
+  color: black;
+}
+main .facial {
+  border-color: #ff8ba7;
+  font-size: 20px;
+  font-family: "Josefin Slab";
+}
+main .facial h2 {
+  font-weight: bold;
+  padding-left: 30px;
+}
+main .facial ul {
+  margin-left: 170px;
+}
+main .cuerpo {
+  border-color: #ff8ba7;
+  font-size: 20px;
+  font-family: "Josefin Slab";
+}
+main .cuerpo h2 {
+  font-weight: bold;
+  padding-left: 150px;
+}
+main .unas {
+  border-color: #ff8ba7;
+  font-size: 20px;
+  font-family: "Josefin Slab";
+}
+main .unas h2 {
+  font-weight: bold;
+  padding-left: 120px;
+}
+main .pest {
+  border-color: #ff8ba7;
+  font-size: 20px;
+  font-family: "Josefin Slab";
+}
+main .pest h2 {
+  font-weight: bold;
+  padding-left: 130px;
+}
+main .depi {
+  border-color: #ff8ba7;
+  font-size: 20px;
+  font-family: "Josefin Slab";
+}
+main .depi h2 {
+  font-weight: bold;
+  padding-left: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
