@@ -1,4 +1,4 @@
-main .templ li, main .carousel-item.active, main section li, footer .pie, .servicios .list {
+main .carousel-item.active, main section li, footer .pie, .servicios .list {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -101,7 +101,7 @@ main .descript {
   background-color: #ff8ba7;
 }
 
-main .templ li, main .carousel-item.active, main section li, footer .pie, .servicios .list {
+main .carousel-item.active, main section li, footer .pie, .servicios .list {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -145,7 +145,7 @@ main section li {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-main .templ li, .servicios .list, footer .pie, main section li, main .carousel-item.active {
+.servicios .list, footer .pie, main section li, main .carousel-item.active {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -158,9 +158,8 @@ main .depi, main .pest, main .unas, main .cuerpo, main .facial {
   border: 1.5px solid;
 }
 
-main .templ li {
-  list-style-type: none;
-  padding: inferit;
+main .form-group {
+  justify-content: center;
 }
 main .btn {
   margin-left: 100px;
@@ -172,7 +171,7 @@ main .btn:hover {
   background-color: #ff8ba7;
 }
 
-.servicios .list, footer .pie, main section li, main .carousel-item.active, main .templ li {
+.servicios .list, footer .pie, main section li, main .carousel-item.active {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;

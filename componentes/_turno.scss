@@ -3,14 +3,6 @@
 @import "../base/extends";
 
 main{
-.templ{
-    li{
-        @extend %display;
-        list-style-type: none;
-        padding: inferit;
-        
-    }
-}
 .btn{
     margin-left: 100px;
     color: $colnegr;
